@@ -1,3 +1,3 @@
 # ArduinoMultithreading
 create multitasking applications using Arduino
-![alt text](https://raw.githubusercontent.com/ArabicRobotics/ArduinoMutithreading/master/ArduinoMultithreading/Article.png)
+![example output](https://github.com/ArabicRobotics/ArduinoMultithreading/blob/master/Article.png?raw=true)
