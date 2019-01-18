@@ -34,7 +34,17 @@ void reset()
 };
 #pragma endregion
 
+State blinkState;
 
+  void On()
+  {
+    ///// your code for on is here ...
+    }
+  void Off()
+  {
+    /// your code for off is here ...
+    }
+  
 	void blink()
 			{
 				if (blinkState.IsEmpty == true)
@@ -47,7 +57,7 @@ void reset()
 			   if (blinkState.iloopState==1)
 			   {
 			   if (millis() < blinkState.previousMillis +  blinkState.OnTime) return;      
-						Off();
+						//Off();
 						blinkState.iloopState = 0;
 				blinkState.keepState(blinkState.iloopState);
 						return;			
@@ -56,9 +66,10 @@ void reset()
       if (blinkState.iloopState==0)
       {
          if (millis() < blinkState.previousMillis +  blinkState.OffTime) return;                  
-				On();
+				//On();
 				blinkState.iloopState = 1;
          blinkState.keepState(blinkState.iloopState);	
 				return;
       }
 	};	
+

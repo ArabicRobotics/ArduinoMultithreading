@@ -12,7 +12,6 @@ unsigned long prevTimeOut = millis();
 int timeOut = 3000;
 
 
-State blinkState;
 
 
 	void serialLoop() 
@@ -25,9 +24,9 @@ State blinkState;
           {
             Serial.println("Serial Available : ");
             Serial.println();
-            x = (char)Serial.read();
+           char x = (char)Serial.read();
             Serial.println(x);
-            getDataFromPC(x);
+            //getDataFromPC(x);
           }
              prevTimeOut = millis();
             Serial.println("Time Out");
